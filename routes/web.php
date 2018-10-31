@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::post('/contact', function ()
+    {
+        $data= request()->all();
+        echo "Email:" . $data['email'] . '<br>';
+        echo "Body:" . $data['body'];
+    });
