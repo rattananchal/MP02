@@ -18,11 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/contact', 'HomeController@contact')->name('contact');
-Route::post('/contact', function ()
+Route::get('/contact', 'ContactController@contact')->name('contact');
+Route::post('/contact', 'ContactController@store')->name('contact.store');
+/*Route::post('/contact', function ()
     {
         $data= request()->all();
         echo "Email:" . $data['email'] . '<br>';
         echo "Body:" . $data['body'];
-    });
+    });*/
+Route::get('/thanks/{name}', 'ContactController@thanks') ->name ('thanks') ;
 Route::get('/about', 'HomeController@about')->name('about');

@@ -24,8 +24,9 @@
     <div class="card-body">
 
 
-<form action="/contact" method="post">
-    {{--{{(csrf-field())}}--}}
+<form action="/contact" method="post" action="{{route('contact.store')}}">
+    {{(csrf_field())}}
+
 
     <div>
 

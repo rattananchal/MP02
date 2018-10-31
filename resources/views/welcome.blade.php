@@ -34,11 +34,19 @@
                 position: relative;
             }
 
+            .top-left {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
+
+
 
             .content {
                 text-align: center;
@@ -78,6 +86,9 @@
                     @endauth
                 </div>
             @endif
+            <div class="top-left links">
+                <a href="{{ url('/contact') }}">Contact</a>
+            </div>
 
             <div class="content">
                 <div class="title m-b-md">
