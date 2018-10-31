@@ -25,3 +25,4 @@ Route::post('/contact', function ()
         echo "Email:" . $data['email'] . '<br>';
         echo "Body:" . $data['body'];
     });
+Route::get('/about', 'HomeController@about')->name('about');
