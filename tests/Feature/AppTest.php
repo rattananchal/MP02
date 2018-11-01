@@ -19,6 +19,12 @@ class AppTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function testLogin()
+    {
+        $response = $this->get('/login');
+        $response->assertStatus(200);
+    }
+
 
 
 }
