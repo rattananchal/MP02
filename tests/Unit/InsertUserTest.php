@@ -18,6 +18,6 @@ class InsertUserTest extends TestCase
     public function testInsertUserTest()
     {
         $user = factory(\App\User::class)->create();
-        $this->assertDatabaseHas('users', ['id' => $user->id]);
+        $this->assertDatabaseHas('users', ['email' => $user->email]);
     }
 }
