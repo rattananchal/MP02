@@ -25,6 +25,11 @@ class AppTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function testAbout()
+    {
+        $response = $this->get('/about');
+        $response->assertStatus(200);
+    }
 
 
 }
