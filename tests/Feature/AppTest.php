@@ -31,7 +31,11 @@ class AppTest extends TestCase
         $response->assertStatus(200);
     }
 
-   
+    public function testContact()
+    {
+        $response = $this->get('/contact');
+        $response->assertStatus(200);
+    }
 
 
 }
