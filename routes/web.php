@@ -27,4 +27,4 @@ Route::post('/contact', 'ContactController@store')->name('contact.store');
         echo "Body:" . $data['body'];
     });*/
 Route::get('/thanks/{name}', 'ContactController@thanks') ->name ('thanks') ;
-Route::get('/about', 'HomeController@about')->name('about');
+Route::get('/about', 'AboutController@about')->name('about');

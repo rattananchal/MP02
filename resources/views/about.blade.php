@@ -17,7 +17,8 @@
 
 <div class="'card mt-3 pl-2 pr-2">
     <div class="card-title pl-3">
-        <h4>  Send your queries here</h4>
+        <h4>  About Page</h4>
+        <h6> Here is the short discription of what we define</h6>
     </div>
 
 
